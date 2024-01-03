@@ -2491,7 +2491,7 @@ iframe.conmap {
     display: flex;
     max-width: 98%;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     margin-bottom: 20px;
     border-radius: 15px;
     border: 1px solid #DDECEC;
@@ -2633,6 +2633,11 @@ h4.wp-block-heading{
     background: #000;
     color: #fff;
 }
+.blogbox .blogdata .blogimg a.blogbgremove:hover {
+    background: transparent;
+    color: #fff;
+}
+
 
 .blogbox .blogdata .blogtext .share {
     position: absolute;

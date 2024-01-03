@@ -84,12 +84,16 @@ const Blogs = ({ postId }) => {
             <div className="col-md-8">
               {
                 (searchQuery ? filteredPosts : posts).map(post => (
+                  console.log(post),
                   <div className="blogdata" key={post.id}>
                     <div className="blogimg">
+                    <Link href={`/Explore/${post.id}`} className="blogbgremove">
                       {post.mediaItem && <img key={post.mediaItem.id} src={post.mediaItem.source_url} alt="blogpost" />}
                       <a href="#">{categories[post.categories]}</a>
+                    </Link>
                     </div>
                     <div className="blogtext">
+                    <Link href={`/Explore/${post.id}`}>
                       <ul>
                         <li>On <span> {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span></li>
                         <li>By <span> {authors[post.author]}</span></li>
@@ -97,10 +101,12 @@ const Blogs = ({ postId }) => {
                       <h6>{post.title.rendered}</h6>
                       <p dangerouslySetInnerHTML={{ __html: getFirstWords(post.content.rendered, 20) }} />
                       <Link to={`/Explore/${post.id}`}>Explore More</Link>
-                      <div className="share">
+                      {/* <div className="share">
                         <img src={share} alt="share" />
-                      </div>
+                      </div> */}
+                    </Link>
                     </div>
+
                   </div>
 
                 ))
