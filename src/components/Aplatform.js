@@ -1,6 +1,14 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import belowtestimonial from "../images/belowtestimonial.jpeg";
 const Aplatform = () => {
+  //const navigate = useNavigate();
+  const scrollToLetsSection = (e) => {
+    const letsSection = document.getElementById('lets');
+    if (letsSection) {
+      letsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <section className="aplatform">
@@ -9,8 +17,7 @@ const Aplatform = () => {
             <div className="col-md-6">
               <figure className="line-left">
                 <span>
-                  {/* <img src="images/Rectangle52.png" /> */}
-                  <img src="images/belowtestimonial.jpeg" />
+                  <img src={belowtestimonial} alt="belowtestimonial"/>
                 </span>
               </figure>
             </div>
@@ -26,9 +33,9 @@ const Aplatform = () => {
                   taste
                   <br /> of tomorrow's workspace.
                 </p>
-                <a href="#" className="link">
+                <Link to="/#lets" className="link" onClick={scrollToLetsSection}>
                   Request a quote
-                </a>
+                </Link>
               </div>
             </div>
           </div>
