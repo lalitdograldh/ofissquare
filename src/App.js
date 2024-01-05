@@ -8,10 +8,12 @@ import Footer from './components/Footer'
 import Aerocity from './components/Aerocity';
 import Coworkingspaces from './components/Coworkingspaces';
 import Sector62Noida from './components/Sector62Noida';
+import NearBySectorSonaRoadGurugram from './components/NearBySectorSonaRoadGurugram';
 import SonaRoadGurugram from './components/SonaRoadGurugram';
 import MgRoadGurugram from './components/MgRoadGurugram';
 import NoidaSector16 from './components/NoidaSector16';
 import CoworkingspacesGurugram from './components/CoworkingspacesGurugram';
+import SonaRoadDemandbook from './components/SonaRoadDemandbook';
 import Contact from './components/Contact';
 import Explore from './components/Explore';
 import Career from './components/Career';
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="/CoworkingspacesGurugram" Component={CoworkingspacesGurugram}/>
         <Route path="/Explore/:id" Component={Explore}/>
         <Route path="/Career/" Component={Career}/>
+        <Route path="/NearBySectorSonaRoadGurugram/" Component={NearBySectorSonaRoadGurugram}/>
+        <Route path="/SonaRoadDemandbook/" Component={SonaRoadDemandbook}/>
         
       </Routes>
       <Footer/>

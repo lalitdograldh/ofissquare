@@ -1,13 +1,13 @@
 import React from 'react'
-import Rectangle46 from "../images/Rectangle46.png";
-import Rectangle48 from "../images/Rectangle48.png";
-import Rectangle50 from "../images/Rectangle50.png";
-import Rectangle79 from "../images/Rectangle79.png";
+import Rectangle46 from "../images/sonaRectangle46.PNG";
+import Rectangle48 from "../images/sonabannerbg.jpg";
+import Rectangle50 from "../images/sonaRectangle50.jpg";
+import Rectangle79 from "../images/sonaRectangle79.jpg";
 import Group332 from "../images/Group 33 (2).png";
 import Group11 from "../images/Group11.png";
 import Group12 from "../images/Group12.png";
 import Group13 from "../images/Group13.png";
-import Group14 from "../images/Group14.png";
+//import Group14 from "../images/Group14.png";
 import Group15 from "../images/Group15.png";
 const AmenitiesSohna = () => {
     const itemsData = [
@@ -31,11 +31,11 @@ const AmenitiesSohna = () => {
             heading:'Terrace garden',
             desc:'Cherish your work breaks at Ofis Square in MG Road with a serene terrace garden.'
          },
-        {
-            img:Group14,
-            heading:'Phone booths',
-            desc:'Private calls made easy: step into our soundproof phone booths.'
-         },
+      //   {
+      //       img:Group14,
+      //       heading:'Phone booths',
+      //       desc:'Private calls made easy: step into our soundproof phone booths.'
+      //    },
         {
             img:Group15,
             heading:'Secure Printing',
@@ -52,24 +52,24 @@ const AmenitiesSohna = () => {
                    <li>
                       <figure className="line-top">
                          <span>
-                          <img src={Rectangle46}/>
+                          <img src={Rectangle46} alt='Rectangle46'/>
                          </span>
                       </figure>
                       <figure>
                          <span>
-                          <img src={Rectangle48}/>
+                          <img src={Rectangle48} alt='Rectangle48'/>
                          </span>
                       </figure>
                    </li>
                    <li>
                       <figure>
                          <span>
-                          <img src={Rectangle50}/>
+                          <img src={Rectangle50} alt='Rectangle50'/>
                          </span>
                       </figure>
                       <figure className="line-bottom">
                          <span>
-                          <img src={Rectangle79}/>
+                          <img src={Rectangle79} alt='Rectangle79'/>
                          </span>
                       </figure>
                    </li>
@@ -82,7 +82,7 @@ const AmenitiesSohna = () => {
                     {itemsData.map((item, index) => (
                         <li key={index}>
                          <div className="box1">
-                           <h5><span><img src={item.img}/></span> {item.heading}</h5>
+                           <h5><span><img src={item.img} alt='img'/></span> {item.heading}</h5>
                             <p>{item.desc}</p>
                          </div>
                         </li>

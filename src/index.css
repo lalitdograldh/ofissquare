@@ -1525,6 +1525,9 @@ footer p.copy {
     align-items: flex-end;
     margin-top: -100px;
 }
+#sonaRoadGurugramBanner{
+    background-image: url(/public/images/sonabannerbg.jpg);
+}
 
 .banner h1 {
     color: #fff;

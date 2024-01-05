@@ -5,19 +5,26 @@ import AerocityGroup1 from "../images/Aerocity-Group (1).png";
 import star from "../images/star.png";
 import sq from "../images/sq.png";
 import desk from "../images/desk.png";
-import Demandbook from './Demandbook'
 import Testimonials from './Testimonials'
 import LetsNoidaSector62 from './LetsNoidaSector62'
 import NewEvents from './NewEvents'
 import FaqSohnaRoad from "./FaqSohnaRoad";
 import AmenitiesSohna from "./AmenitiesSohna";
-import NearBySector62Noida from "./NearBySector62Noida";
+import NearBySectorSonaRoadGurugram from "./NearBySectorSonaRoadGurugram";
+import SonaRoadDemandbook from "./SonaRoadDemandbook";
 const SonaRoadGurugram = () => {
-console.log('meri photo');
   const itemsData = [
     {
       img: AerocityUnion,
       desc: "4th floor, Block-1, VATIKA BUSINESS PARK, Badshahpur Sohna Rd Hwy, Vatika City, Block W, Sector 49, Gurugram, Haryana 122018",
+    },
+    {
+      img: AerocityGroup,
+      desc: "Popular Restaurants, Global enterprises, public and private sector business establishments - within 1.0 km",
+    },
+    {
+      img: AerocityGroup1,
+      desc: "Global enterprises, public and private sector business establishments - within 0.5 km",
     }
   ];
   const itemsDataSecond = [
@@ -39,7 +46,7 @@ console.log('meri photo');
   ];
   return (
     <>
-      <div className="banner">
+      <div className="banner" id="sonaRoadGurugramBanner">
         <div className="container">
           <div className="row">
             <h1>
@@ -74,12 +81,12 @@ console.log('meri photo');
         </div>
      </section>
 
-     <Demandbook/>
+     <SonaRoadDemandbook/>
      <AmenitiesSohna/>
      <NewEvents/>
      <FaqSohnaRoad/>
      <Testimonials/>
-     <NearBySector62Noida/>
+     <NearBySectorSonaRoadGurugram/>
      <LetsNoidaSector62/>
     </>
   );
