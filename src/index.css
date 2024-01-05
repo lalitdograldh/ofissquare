@@ -1525,10 +1525,18 @@ footer p.copy {
     align-items: flex-end;
     margin-top: -100px;
 }
+#sectornoida62banner{
+    background-image: url(/public/images/NoidaRectangle30.jpeg);
+}
+#mgRoadGurugramBanner{
+    background-image: url(/public/images/belowtestimonial.jpeg);
+}
 #sonaRoadGurugramBanner{
     background-image: url(/public/images/sonabannerbg.jpg);
 }
-
+#noidaSector3Banner{
+    background-image: url(/public/images/noidaSector3Banner.jpg);
+}
 .banner h1 {
     color: #fff;
 }

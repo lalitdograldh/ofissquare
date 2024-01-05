@@ -28,7 +28,7 @@ const Footer = () => {
                       <div className="col-md-3">
                           <h5 className="white">Coworking Spaces</h5>
                           <a href="/Sector62Noida">Coworking Space in Sector - 62 Noida</a>
-                          <a href="/NoidaSector16">Coworking Space In Sector - 16 Noida</a>
+                          <a href="/NoidaSector3">Coworking Space In Sector - 3 Noida</a>
                           <a href="/SonaRoadGurugram">Coworking Space in Sohna Road</a>
                           <a href="/MgRoadGurugram">Coworking Space in MG Road</a>
                           {/* <Link to="/Aerocity">Coworking Space In Aerocity</Link>
@@ -50,9 +50,9 @@ const Footer = () => {
                           {/* <Link to="/About">About Us</Link>
                           <Link to="/Contact">Contact Us</Link>
                           <Link to="/Blogs">Blogs</Link> */}
-                         <Link to="/News">The News</Link>
-                          <Link to="/Career">Careers</Link>
-                          <Link to="#">FAQs</Link>
+                         <a href="/News">The News</a>
+                          <a href="/Career">Careers</a>
+                          <a href="#">FAQs</a>
                       </div>
                       <div className="col-md-3">
                           <h5 className="white">Follow us</h5>

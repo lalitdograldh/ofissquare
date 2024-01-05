@@ -11,7 +11,7 @@ import Lets from './Lets'
 import AmenitiesMgRoad from "./AmenitiesMgRoad";
 import NewEvents from "./NewEvents";
 import FaqMgRoadGurugram from "./FaqMgRoadGurugram";
-import Nearcenter from "./Nearcenter";
+import NearcenterMgRoadGurugram from "./NearcenterMgRoadGurugram";
 const MgRoadGurugram = () => {
   const itemsData = [
     {
@@ -20,11 +20,11 @@ const MgRoadGurugram = () => {
     },
     {
       img: AerocityGroup,
-      desc: "Popular restaurants, retail hubs and 5-star business hotels - within 1 km; Metro Station - 0.3 km; Indira Gandhi International Airport - 2.8 kms",
+      desc: "Popular restaurants, retail hubs and 5-star business hotels - within 1 km; Metro Station - 0.3 km; Indira Gandhi International Airport - 2.8 kms.",
     },
     {
       img: AerocityGroup1,
-      desc: "Global enterprises, public and private sector business establishments - within 0.5 km",
+      desc: "Global enterprises, public and private sector business establishments - within 0.5 km.",
     }
   ];
   const itemsDataSecond = [
@@ -46,7 +46,7 @@ const MgRoadGurugram = () => {
   ];
   return (
     <>
-      <div className="banner">
+      <div className="banner" id="mgRoadGurugramBanner">
         <div className="container">
           <div className="row">
             <h1>
@@ -64,7 +64,7 @@ const MgRoadGurugram = () => {
                  <h2>Ofis Square in MG Road Gurugram</h2>
                  <ul>
                    {itemsData.map((item, index) => (
-                     <li key={index}><span><img src={item.img} height="20px" width="20px"/></span>{item.desc}</li>
+                     <li key={index}><span><img src={item.img} height="20px" width="20px" alt={`Icon ${index + 1}`}/></span>{item.desc}</li>
                    ))}
                 </ul>             
               </div>
@@ -72,7 +72,7 @@ const MgRoadGurugram = () => {
                 <div className="rigth-box"> 
                   <ul>
                   {itemsDataSecond.map((item, index) => (
-                    <li key={index}><img src={item.img} height="25" width="25"/><h5>{item.starrating}</h5><p>{item.rating}</p></li>
+                    <li key={index}><img src={item.img} height="25" width="25" alt={`Icon ${index + 1}`}/><h5>{item.starrating}</h5><p>{item.rating}</p></li>
                   ))}
                   </ul>
                 </div>
@@ -85,7 +85,7 @@ const MgRoadGurugram = () => {
      <NewEvents/>
      <FaqMgRoadGurugram/>
      <Testimonials/>
-     <Nearcenter/>
+     <NearcenterMgRoadGurugram/>
      <Lets/>
     </>
   );

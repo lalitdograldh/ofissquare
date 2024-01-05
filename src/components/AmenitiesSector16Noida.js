@@ -1,8 +1,8 @@
 import React from 'react'
-import Rectangle46 from "../images/Rectangle46.png";
-import Rectangle48 from "../images/Rectangle48.png";
-import Rectangle50 from "../images/Rectangle50.png";
-import Rectangle79 from "../images/Rectangle79.png";
+import Rectangle46 from "../images/NS3Rectangle32.jpg";
+import Rectangle48 from "../images/sector3Rectangle48.jpg";
+import Rectangle50 from "../images/sector3Rectangle50.jpg";
+import Rectangle79 from "../images/sector3Rectangle79.jpg";
 import Group332 from "../images/Group 33 (2).png";
 import Group11 from "../images/Group11.png";
 import Group12 from "../images/Group12.png";
@@ -18,7 +18,7 @@ const AmenitiesSector16Noida = () => {
         },
         {
             img:Group11,
-            heading:'Phone booths',
+            heading:'Video & Phone booths',
             desc:'Private calls made easy: step into our soundproof phone booths.'
          },
         {
@@ -76,8 +76,8 @@ const AmenitiesSector16Noida = () => {
                 </ul>
              </div>
               <div className="col-md-6 amenities">
-                 <h2>All-inclusive amenities asdf</h2>
-                 <p>From gourmet coffee to spacious parking, COWRKS Aerocity offers amenities that help you and your teams operate without worries.</p>
+                 <h2>All-inclusive amenities</h2>
+                 <p>From gourmet coffee to spacious parking, OFIS SQUARE, Noida Sector 3,  offers amenities that help you and your teams operate without worries.</p>
                  <ul className="text">
                     {itemsData.map((item, index) => (
                         <li key={index}>

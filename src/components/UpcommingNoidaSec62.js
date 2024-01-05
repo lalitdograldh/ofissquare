@@ -1,8 +1,8 @@
 import React from 'react'
-import Rectangle46 from "../images/Rectangle46.png";
-import Rectangle48 from "../images/Rectangle48.png";
-import Rectangle50 from "../images/Rectangle50.png";
-import Rectangle79 from "../images/Rectangle79.png";
+import Rectangle46 from "../images/amenitiesRectangle46.jpeg";
+import Rectangle50 from "../images/amenitiesRectangle50.JPG";
+import Rectangle48 from "../images/amenitiesRectangle48.jpeg";
+import Rectangle79 from "../images/amenitiesRectangle79.JPG";
 import Group332 from "../images/Group 33 (2).png";
 import Group11 from "../images/Group11.png";
 import Group12 from "../images/Group12.png";
@@ -14,32 +14,32 @@ const UpcommingNoidaSec62 = () => {
         {
            img:Group332,
            heading:'Fuel bar',
-           desc:'where hand-picked teas, artisanal coffee, cookies, and fruit water create a well-stocked oasis of refreshment'
+           desc:'Well-stocked Fuel Bars with hand-picked selections of hot & cold beverages, cookies, healthy bars and munchies'
         },
         {
             img:Group11,
             heading:'Luxurious lounges',
-            desc:'Indulge in opulent comfort at our lavish, sophisticated lounging spaces.'
+            desc:'Insightfully built lounges designed to foster creativity and collaboration.'
          },
         {
             img:Group12,
             heading:'Mail & Package',
-            desc:'Get mail and package support at our Community Desk—your convenience hub!'
+            desc:'Community Desk support with receiving of your mails and packages.'
          },
         {
             img:Group13,
             heading:'Phone booths',
-            desc:'Private calls made easy: step into our soundproof phone booths.'
+            desc:'Soundproof phone booths for you to take calls in privacy.'
          },
         {
             img:Group14,
-            heading:'Board rooms',
-            desc:'Experience seamless presentations in our board rooms equipped with top-notch audio and video facilities.'
+            heading:'Secure printing',
+            desc:'Community Desk support with receiving of your mails and packages.'
          },
         {
             img:Group15,
             heading:'Visitor management',
-            desc:'Welcome guests effortlessly with seamless assistance and complimentary WiFi access.'
+            desc:'Seamless assistance for your visitors, with guest WiFi access.'
          },
       ];
   return (
@@ -52,24 +52,24 @@ const UpcommingNoidaSec62 = () => {
                    <li>
                       <figure className="line-top">
                          <span>
-                          <img src={Rectangle46}/>
+                          <img src={Rectangle46} alt='Rectangle46'/>
                          </span>
                       </figure>
                       <figure>
                          <span>
-                          <img src={Rectangle48}/>
+                          <img src={Rectangle48} alt='Rectangle48'/>
                          </span>
                       </figure>
                    </li>
                    <li>
                       <figure>
                          <span>
-                          <img src={Rectangle50}/>
+                          <img src={Rectangle50} alt='Rectangle50'/>
                          </span>
                       </figure>
                       <figure className="line-bottom">
                          <span>
-                          <img src={Rectangle79}/>
+                          <img src={Rectangle79} alt='Rectangle79'/>
                          </span>
                       </figure>
                    </li>
@@ -77,12 +77,12 @@ const UpcommingNoidaSec62 = () => {
              </div>
               <div className="col-md-6 amenities">
                  <h2>All inclusive amenities</h2>
-                 <p>where gourmet coffee meets ample parking, ensuring worry-free operations for you and your team in style and comfort.</p>
+                 <p>From gourmet coffee to spacious parking, OFIS SQUARE, Noida Sector 62,  offers amenities that help you and your teams operate without worries.</p>
                  <ul className="text">
                     {itemsData.map((item, index) => (
                         <li key={index}>
                          <div className="box1">
-                           <h5><span><img src={item.img}/></span> {item.heading}</h5>
+                           <h5><span><img src={item.img} alt={`Icon ${index + 1}`}/></span> {item.heading}</h5>
                             <p>{item.desc}</p>
                          </div>
                         </li>

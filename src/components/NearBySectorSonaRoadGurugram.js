@@ -66,6 +66,7 @@ const NearBySectorSonaRoadGurugram = () => {
                                                             src={item.imgGroup}
                                                             height="20px"
                                                             width="20px"
+                                                            alt='imggroup'
                                                         />
                                                     </span>
                                                     {item.descAdd}
